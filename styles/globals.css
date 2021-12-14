@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .button {
+    @apply h-5 w-5 cursor-pointer hover:scale-125 transition transform duration-100 ease-out;
+  }
+}
+
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hide scroll bar for chrome, safari and opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scroll bar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
